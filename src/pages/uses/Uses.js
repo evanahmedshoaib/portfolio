@@ -41,23 +41,26 @@ export const Uses = () => {
               <ProjectSectionHeading>Design</ProjectSectionHeading>
               <ProjectSectionText as="div">
                 <List>
-                  <ListItem>
-                    <Link href="https://www.figma.com">Figma</Link> is my primary tool for
-                    UI design these days. Made the switch from Sketch in 2020 and haven’t
-                    looked back. I’ve also created{' '}
-                    <Link href="https://www.figma.com/@hamish">a few plugins</Link> that
-                    you can install.
+                <ListItem>
+                    Lately, I've been all about WordPress, especially with plugins 
+                    like <Link href="https://elementor.com/"> Elementor</Link> for 
+                    my web design gigs. I'm also tinkering
+                    with <Link href="https://www.maxon.net/en/cinema-4d">Figma</Link>, but
+                    still working on getting the hang of them.
                   </ListItem>
                   <ListItem>
-                    Any motion graphics I create are created in Adobe After Effects. So
-                    far I haven’t found a non-Adobe product that’s as good. If anyone has
-                    suggestions please <Link href="/contact">message me</Link>.
+                    When it comes to 2D graphics or photo editing, I stick 
+                    with Adobe Photoshop, Lightroom, and Illustrator because 
+                    they are top-notch and have everything I need. Plus, I'm 
+                    really into tools that integrate AI. If you have got any 
+                    recommendations for alternatives with AI integration, <Link href="/contact">hit me up!</Link>.
                   </ListItem>
                   <ListItem>
-                    For any 3D models I use{' '}
-                    <Link href="https://www.blender.org/">Blender</Link>. Since 2.8 it’s
-                    become way simpler to use and in a lot of ways better than expensive
-                    paid tools like 3DS Max or Maya.
+                    I mainly work with <Link href="https://www.maxon.net/en/cinema-4d">
+                    Cinema 4D</Link> for 3D modeling and animation, although I also have 
+                    some experience with <Link href="https://www.autodesk.com/products/maya/overview">
+                    Maya</Link> and <Link href="https://www.blender.org/">Blender
+                    </Link>. However, Cinema 4D is my preferred choice.
                   </ListItem>
                 </List>
               </ProjectSectionText>
@@ -71,13 +74,13 @@ export const Uses = () => {
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    I use{' '}
-                    <Link href="https://code.visualstudio.com/">Visual Studio Code</Link>{' '}
-                    as my text editor, with the Atom One Dark theme and Operator Mono as
-                    my typeface of choice.
+                    I mostly use <Link href="https://www.jetbrains.com/ides/">Jetbrains</Link> softwares such 
+                    as PyCharm, WebStorm, IntelliJ, Clion to code. 
+                    Their ai assistant is really good. Also use <Link href="https://code.visualstudio.com/">VSCode</Link> sometimes 
+                    as an alternative.
                   </ListItem>
                   <ListItem>
-                    Firefox is my main browser for both development and general use.
+                    Chrome is my main browser for both development and general use.
                   </ListItem>
                   <ListItem>
                     <Link href="https://reactjs.org/">React</Link> is my front end
@@ -90,24 +93,16 @@ export const Uses = () => {
                     learning curve but you can do some really powerful stuff with it.
                   </ListItem>
                   <ListItem>
-                    For CSS I’ve used a myriad pre-processors and css-in-js solutions like
-                    styled-components, but these days I’m using vanilla CSS with{' '}
-                    <Link href="https://postcss.org/">PostCSS</Link> to get upcoming CSS
-                    features today.
+                  When it comes to game development, I switch 
+                  between <Link href="https://unity.com/">Unity</Link> and <Link href="https://www.unrealengine.com/en-US/unreal-engine-5">Unreal Engine</Link>, depending
+                   on the project I'm tackling.
                   </ListItem>
                   <ListItem>
                     For Javascript animations I use{' '}
                     <Link href="https://www.framer.com/motion/">Framer Motion</Link>, it’s
                     a great way to add spring animations to React and three.js.
                   </ListItem>
-                  <ListItem>
-                    For building and testing UI components in isolation I use{' '}
-                    <Link href="https://storybook.js.org/">Storybook</Link>. Check out the{' '}
-                    <Link href="https://storybook.hamishw.com">
-                      storybook for this website
-                    </Link>
-                    .
-                  </ListItem>
+                  
                 </List>
               </ProjectSectionText>
             </ProjectTextRow>
@@ -120,44 +115,20 @@ export const Uses = () => {
               <Table>
                 <TableBody>
                   <TableRow>
-                    <TableHeadCell>CPU</TableHeadCell>
-                    <TableCell>AMD Ryzen 5800x</TableCell>
+                    <TableHeadCell>Desktop</TableHeadCell>
+                    <TableCell>Custom built</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>GPU</TableHeadCell>
-                    <TableCell>MSI Gaming X Trio RTX 3080</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Memory</TableHeadCell>
-                    <TableCell>GSkill 32GB DDR4 3600mhz CAS 18</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Motherboard</TableHeadCell>
-                    <TableCell>MSI B550 Tomahawk</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Monitor</TableHeadCell>
-                    <TableCell>1440p IPS 144hz LG 27GL850</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Keyboard</TableHeadCell>
-                    <TableCell>Logitech MX Keys</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Mouse</TableHeadCell>
-                    <TableCell>Logitech G403</TableCell>
+                    <TableHeadCell>Operating system</TableHeadCell>
+                    <TableCell>Windows 11</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Laptop</TableHeadCell>
-                    <TableCell>Macbook Pro 14″ (2022 M1 Max)</TableCell>
+                    <TableCell>Macbook Air M2 15″</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Headphones</TableHeadCell>
-                    <TableCell>Audio Technica ATH-M50x/Apple Airpods</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Microphone</TableHeadCell>
-                    <TableCell>Blue Yeti</TableCell>
+                    <TableHeadCell>Camera</TableHeadCell>
+                    <TableCell>Canon EOS 700D</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>

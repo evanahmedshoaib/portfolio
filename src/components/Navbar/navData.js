@@ -19,18 +19,18 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/hamishMW',
-    icon: 'twitter',
+    label: 'Facebook',
+    url: 'https://www.facebook.com/evanahmedshoaib/',
+    icon: 'facebook',
   },
   {
-    label: 'Figma',
-    url: 'https://www.figma.com/@Hamish',
-    icon: 'figma',
+    label: 'Instagram',
+    url: 'https://www.instagram.com/absolutely_not_shoaib',
+    icon: 'instagram',
   },
   {
-    label: 'Github',
-    url: 'https://github.com/HamishMW',
-    icon: 'github',
+    label: 'Linkedin',
+    url: 'https://www.linkedin.com/in/evan-ahmed-shoaib-28928b215',
+    icon: 'linkedin',
   },
 ];
