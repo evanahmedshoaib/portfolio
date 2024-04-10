@@ -33,7 +33,7 @@ export const Contact = () => {
     try {
       setSending(true);
 
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/message`, {
+      const response = await fetch(`https://formspree.io/f/xeqyplov`, {
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -71,7 +71,7 @@ export const Contact = () => {
       />
       <Transition unmount in={!complete} timeout={1600}>
         {(visible, status) => (
-          <form className={styles.form} method="post" onSubmit={onSubmit}>
+          <form action="https://formspree.io/f/xeqyplov" className={styles.form} method="post" onSubmit={onSubmit} >
             <Heading
               className={styles.title}
               data-status={status}
@@ -104,6 +104,7 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationS, initDelay)}
               autoComplete="off"
+
               label="Message"
               maxLength={4096}
               {...message}
