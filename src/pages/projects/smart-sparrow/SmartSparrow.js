@@ -1,4 +1,3 @@
-import backgroundSprLarge from 'assets/spr-background-large.jpg';
 import backgroundSprPlaceholder from 'assets/spr-background-placeholder.jpg';
 import backgroundSpr from 'assets/spr-background.jpg';
 
@@ -51,7 +50,7 @@ export const SmartSparrow = () => {
         <ProjectBackground
           opacity={isDark ? 0.5 : 0.8}
           src={backgroundSpr}
-          srcSet={`${backgroundSpr.src} 1080w, ${backgroundSprLarge.src} 2160w`}
+          srcSet={`${backgroundSpr.src} 1080w, ${backgroundSpr.src} 2160w`}
           placeholder={backgroundSprPlaceholder}
         />
         <ProjectHeader

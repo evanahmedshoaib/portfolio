@@ -18,6 +18,7 @@ import Twitter from './svg/twitter.svg';
 import Facebook from './svg/facebook.svg';
 import Instagram from './svg/instagram.svg';
 import Linkedin from './svg/linkedin.svg';
+import Pinterest from './svg/pinterest.svg';
 
 export const icons = {
   arrowLeft: ArrowLeft,
@@ -37,7 +38,8 @@ export const icons = {
   twitter: Twitter,
   facebook: Facebook,
   instagram: Instagram,
-  linkedin: Linkedin
+  linkedin: Linkedin,
+  pinterest: Pinterest
 };
 
 export const Icon = ({ icon, className, ...rest }) => {

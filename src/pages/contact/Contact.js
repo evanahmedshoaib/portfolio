@@ -140,7 +140,60 @@ export const Contact = () => {
             >
               Send message
             </Button>
+            
+
+
+            <Heading
+              className={styles.subtitle}
+              data-status={status}
+              level={4}
+              as="h3"
+              style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
+            >
+              <DecoderText text="Find me on social media" start={status !== 'exited'} delay={300} />
+            </Heading>
+            <Button
+              secondary
+              data-visible={visible}
+              href="https://www.facebook.com/evanahmedshoaib/"
+              icon="facebook"
+            >
+              Facebook
+            </Button>
+            <Button
+              secondary
+              data-visible={visible}
+              href="https://www.twitter.com/evanahmedshoaib"
+              icon="twitter"
+            >
+              Twitter
+            </Button>
+            <Button
+              secondary
+              data-visible={visible}
+              href="https://www.linkedin.com/in/evan-ahmed-shoaib-28928b215"
+              icon="linkedin"
+            >
+              Linkedin
+            </Button>
+            <Button
+              secondary
+              data-visible={visible}
+              href="https://www.instagram.com/absolutely_not_shoaib"
+              icon="instagram"
+            >
+              Instagram
+            </Button>
+            <Button
+              secondary
+              data-visible={visible}
+              href="https://www.pinterest.com/evanahmedshoaib/"
+              icon="pinterest"
+            >
+              Pinterest
+            </Button>
           </form>
+          
         )}
       </Transition>
       <Transition unmount in={complete}>

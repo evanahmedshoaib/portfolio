@@ -104,8 +104,8 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Relax"
-        description="'Relax' is your upcoming go-to app for moments of calm amidst life's hustle. With soothing sounds, guided meditation, and stress-relieving exercises, it's your pocket-sized oasis. Stay tuned for its release and get ready to unwind wherever you are."
+        title="Relive"
+        description="Introducing 'Relieve' - your soon-to-be stress-relief companion. Powered by AI, this Android app is your ticket to relaxation in the palm of your hand. Stay tuned for updates as we work on bringing you personalized stress-busting techniques and mindfulness exercises. Coming soon to help you find your calm amidst the chaos."
         buttonText="Comming Soon"
         buttonLink=""
         model={{

@@ -139,7 +139,7 @@
   height: 120px; /* Adjust height as needed */
   overflow: hidden;
 }
-.education-item:hover {
+.educationitem:hover {
   transform: scale(1.05);
   background-color: #f0d396;
 }
@@ -147,7 +147,7 @@
   .education {
     padding: 40px;
   }
-  .education-item {
+  .educationitem {
     display: flex;
     align-items: center;
     justify-content: space-between;

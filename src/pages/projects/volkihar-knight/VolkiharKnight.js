@@ -204,7 +204,7 @@ export function VolkiharKnight() {
                 secondary
                 iconHoverShift
                 icon="chevronRight"
-                href="https://store.steampowered.com/app/933480/Enderal_Forgotten_Stories/"
+                href=""
               >
                 Download CV
               </Button>
