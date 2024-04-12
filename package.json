@@ -37,11 +37,16 @@
     "stylelint-config-standard": "^26.0.0"
   },
   "dependencies": {
+    "@react-spring/three": "^9.7.3",
+    "@react-three/fiber": "^8.16.1",
+    "@react-three/postprocessing": "^2.16.2",
     "framer-motion": "^7.1.0",
     "mdx-bundler": "^9.0.1",
     "next": "^12.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.8.2",
+    "react-three-fiber": "^6.0.13",
     "three": "^0.146.0",
     "three-stdlib": "^2.18.1"
   },
@@ -49,7 +54,7 @@
     "dev": "next dev",
     "build": "next build && next export -o build/",
     "build:storybook": "build-storybook -o build-storybook && node scripts/draco-storybook",
-    "deploy": "aws s3 sync --delete build/ s3://portfolio.v2",
+    "deploy": "aws s3 sync --delete build/ s3://shoaib.portfolio",
     "deploy:storybook": "aws s3 sync --delete build-storybook s3://ev1shoaib-portfolio-storybook",
     "deploy:functions": "cd functions && npm run deploy",
     "start": "next start",

@@ -1,0 +1,125 @@
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-item {
+  position: relative;
+  background-color: #232323; /* Dark background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 500px;
+  width: 90%;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  min-height: 175px; /* Adjusted minimum height for each timeline item */
+}
+
+.timeline-item:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  transform: translateY(0);
+}
+
+.timeline-item h3 {
+  color: #00c6ff; /* Neon blue text color */
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  text-align: center; /* Center-align text horizontally */
+}
+
+.timeline-item p {
+  color: #f9f9f9; /* Light gray text color */
+  text-align: center; /* Center-align text horizontally */
+}
+
+.timeline-item:hover h3 {
+  text-shadow: 2px 2px 4px rgba(0, 198, 255, 0.5); /* Neon blue text shadow on hover */
+}
+
+.timeline-details {
+  margin-top: 10px;
+}
+
+.timeline-details p {
+  color: #f9f9f9; /* Light gray text color */
+  margin: 4px 0;
+  text-align: center; /* Center-align text horizontally */
+}
+
+@keyframes noise {
+  0% {
+    clip-path: inset(10% 0 10% 0);
+    transform: translate(0, 0);
+  }
+  10% {
+    clip-path: inset(20% 0 20% 0);
+    transform: translate(2px, -1px);
+  }
+  20% {
+    clip-path: inset(20% 0 20% 0);
+    transform: translate(-1px, 0);
+  }
+  30% {
+    clip-path: inset(5% 0 5% 0);
+    transform: translate(2px, 1px);
+  }
+  40% {
+    clip-path: inset(15% 0 15% 0);
+    transform: translate(-2px, 0);
+  }
+  50% {
+    clip-path: inset(20% 0 20% 0);
+    transform: translate(1px, -1px);
+  }
+  60% {
+    clip-path: inset(15% 0 15% 0);
+    transform: translate(-1px, 1px);
+  }
+  70% {
+    clip-path: inset(5% 0 5% 0);
+    transform: translate(1px, -1px);
+  }
+  80% {
+    clip-path: inset(20% 0 20% 0);
+    transform: translate(-1px, 1px);
+  }
+  90% {
+    clip-path: inset(20% 0 20% 0);
+    transform: translate(1px, 0);
+  }
+  100% {
+    clip-path: inset(5% 0 5% 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes noise-anim {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0, 0);
+  }
+  10% {
+    clip-path: inset(5% 0 5% 0);
+    transform: translate(1px, -1px);
+  }
+  30% {
+    clip-path: inset(20% 0 20% 0);
+    transform: translate(-1px, 0);
+  }
+  50% {
+    clip-path: inset(15% 0 15% 0);
+    transform: translate(0, 1px);
+  }
+  70% {
+    clip-path: inset(10% 0 10% 0);
+    transform: translate(1px, 1px);
+  }
+  90% {
+    clip-path: inset(10% 0 10% 0);
+    transform: translate(-1px, 0);
+  }
+}
