@@ -23,11 +23,35 @@ import styles from './VolkiharKnight.module.css';
 import usesBackgroundPlaceholder from 'assets/uses-background-placeholder.jpg';
 import usesBackground from 'assets/uses-background.mp4';
 
+import SkillProgressBar from './SkillProgressBar';
+import EducationSection from "./EducationSection";
+
 
 const title = 'Identity';
 const description =
   'My Skills in detail.';
 
+
+const skills = [
+    { skill: 'Python', percentage: 85 },
+    { skill: 'Java', percentage: 62 },
+    { skill: 'C#', percentage: 75 },
+    { skill: 'C', percentage: 70 },
+    { skill: 'HTML', percentage: 95 },
+    { skill: 'CSS', percentage: 80 },
+    { skill: 'Javascript', percentage: 65 },
+    { skill: 'PHP', percentage: 58 },
+  ];
+  const softskills = [
+    { skill: 'Unity', percentage: 75 },
+    { skill: 'Unreal Engine', percentage: 80 },
+    { skill: 'Cinema 4D', percentage: 75 },
+    { skill: 'Cisco Packet Tracer', percentage: 90 },
+    { skill: 'Adobe Photoshop', percentage: 80 },
+    { skill: 'Adobe Lightroom', percentage: 90 },
+    { skill: 'Adobe Illustrator', percentage: 60 },
+    { skill: 'Android Development Studio', percentage: 55 },
+  ];
 
 export function VolkiharKnight() {
 
@@ -35,20 +59,6 @@ export function VolkiharKnight() {
   return (
     <Fragment>
       <Meta title={title} prefix="Projects" description={description} />
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-            [data-theme='dark'] {
-              --rgbPrimary: 240 211 150;
-              --rgbAccent: 240 211 150;
-            }
-            [data-theme='light'] {
-              --rgbPrimary: 134 99 23;
-              --rgbAccent: 134 99 23;
-            }
-          `,
-        }}
-      />
       <ProjectContainer>
       <ProjectBackground
           src={{ src: usesBackground }}
@@ -56,75 +66,35 @@ export function VolkiharKnight() {
           opacity={0.7}
         />
         <ProjectHeader
-          title={title} center centerMobile noMargin
+          title={title} centerMobile noMargin
         />
         <ProjectSection>
           <ProjectSectionColumns>
             <div>
               <ProjectSectionHeading>Language Proficiency</ProjectSectionHeading>
-              <div className={styles.skill}>
-                <li>PYTHON
-                    <span className={styles.bar}><span className={styles.python}></span></span>
-                  </li>
-                  <li>JAVA
-                    <span className={styles.bar}><span className={styles.java}></span></span>
-                  </li>
-                  <li>C#
-                    <span className={styles.bar}><span className={styles.csharp}></span></span>
-                  </li>
-                  <li>C
-                    <span className={styles.bar}><span className={styles.clan}></span></span>
-                  </li>
-                  <li>HTML
-                    <span className={styles.bar}><span className={styles.html}></span></span>
-                  </li>
-                  <li>CSS
-                    <span className={styles.bar}><span className={styles.css}></span></span>
-                  </li>
-                  <li>JAVASCRIPT
-                    <span className={styles.bar}><span className={styles.js}></span></span>
-                  </li>
-                  <li>PHP
-                    <span className={styles.bar}><span className={styles.php}></span></span>
-                  </li>
+              <div className="portfolio-container">
 
+                <div className="skills-list">
+                  {skills.map((skill, index) => (
+                    <SkillProgressBar key={index} skill={skill.skill} percentage={skill.percentage} />
+                  ))}
+                </div>
               </div>
             </div>
-            <div className={styles.textSection}>
             <div>
               <ProjectSectionHeading>Software Fluency</ProjectSectionHeading>
-              <div className={styles.skill}>
-                <li>Unity
-                  <span className={styles.bar}><span className={styles.unity}></span></span>
-                </li>
-                <li>Unreal Engine
-                  <span className={styles.bar}><span className={styles.unrengine}></span></span>
-                </li>
-                <li>Cinema 4D
-                  <span className={styles.bar}><span className={styles.cine4d}></span></span>
-                </li>
-                <li>Cisco Packet Tracer
-                  <span className={styles.bar}><span className={styles.cisco}></span></span>
-                </li>
-                <li>Adobe Photoshop
-                  <span className={styles.bar}><span className={styles.photoshop}></span></span>
-                </li>
-                <li>Adobe Lightroom
-                  <span className={styles.bar}><span className={styles.lightroom}></span></span>
-                </li>
-                <li>Adobe Illustrator
-                  <span className={styles.bar}><span className={styles.illustrator}></span></span>
-                </li>
-                <li>Android Studio
-                  <span className={styles.bar}><span className={styles.adb}></span></span>
-                </li>
+              <div className="portfolio-container">
+
+                <div className="skills-list">
+                  {softskills.map((skill, index) => (
+                    <SkillProgressBar key={index} skill={skill.skill} percentage={skill.percentage} />
+                  ))}
+                </div>
               </div>
             </div>
-            </div>
+
           </ProjectSectionColumns>
         </ProjectSection>
-        
-        
         <ProjectSection backgroundElement={
             <Image
               srcSet={[volkiharEnderal, volkiharEnderalLarge]}
@@ -135,66 +105,28 @@ export function VolkiharKnight() {
           }>
           <ProjectSectionColumns>
             <ProjectSectionContent>
-              <section className={styles.education}>
+              <section>
                 <ProjectSectionHeading>Education</ProjectSectionHeading>
-                <div className={styles.educationitem}>
-                  <div>
-                    <ProjectSectionText>
-                      Bachelor of Science
-                    </ProjectSectionText>
-                    <h5>Southeast University (2022-Ongoing)</h5>
-                    <li>Department: Computer Science and Engineering</li>
-                  </div>
-                </div>
-                <div className={styles.educationitem}>
-                  <div>
-                    <ProjectSectionText>
-                      Diploma in Computer Engineering
-                    </ProjectSectionText>
-                    <h5>Dhaka Polytechnic Institute (2017-2021)</h5>
-                    <li>CGPA: 4.87</li>
-                  </div>
-                </div>
-                <div className={styles.educationitem}>
-                  <div>
-                    <ProjectSectionText>
-                      Secondary School Certificate
-                    </ProjectSectionText>
-                    <h5>Rayhan School And College, Dhaka (2017)</h5>
-
-                    <li>Section: Science</li>
-                    <li>CGPA: 4.87</li>
-                  </div>
-                </div>
+                <EducationSection
+                  title="Education"
+                  items={[ 
+                    { degree: "Bachelor of Science", institution: "Southeast University (2022-Ongoing)", year: "" },
+                    { degree: "Diploma in Computer Engineering", institution: "Dhaka Polytechnic Institute (2017-2021)", grade: "CGPA: 3.67" },
+                    { degree: "Secondary School Certificate", institution: "Rayhan School And College, Dhaka (2017)", grade:"GPA: 5.00" },
+                  ]}
+                />
               </section>
             </ProjectSectionContent>
             <ProjectSectionContent>
-              <section className={styles.education}>
+              <section>
                 <ProjectSectionHeading>Experience</ProjectSectionHeading>
-                <div className={styles.educationitem}>
-                  <div>
-                    <ProjectSectionText>
-                      Freelancer
-                    </ProjectSectionText>
-                    <p>Private Clients (2022-Ongoing)</p>
-                  </div>
-                </div>
-                <div className={styles.educationitem}>
-                  <div>
-                    <ProjectSectionText>
-                      Junior Game Developer (Intern)
-                    </ProjectSectionText>
-                    <p>GameXltd | July 2022 - December 2022</p>
-                  </div>
-                </div>
-                <div className={styles.educationitem}>
-                  <div>
-                    <ProjectSectionText>
-                      Network Engineer (Intern)
-                    </ProjectSectionText>
-                      <p>IT Bangladesh | November 2021 - March 2022</p>
-                  </div>
-                </div>
+                <EducationSection
+                    items={[
+                      { degree: "Freelance Web Developer", institution: "Private Clients | 2022 - Ongoing" },
+                      { degree: "Junior Game Developer (Intern)", institution: "GameXltd | July 2022 - December 2022"},
+                      { degree: "Network Engineer (Intern)", institution: "IT Bangladesh | November 2021 - March 2022"},
+                    ]}
+                  />
               </section>
             </ProjectSectionContent>
           </ProjectSectionColumns>
