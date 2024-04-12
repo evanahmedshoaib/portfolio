@@ -39,6 +39,7 @@ const SkillProgressBar = ({ skill, percentage }) => {
           font-size: 16px;
           font-weight: bold;
           margin-bottom: 5px;
+          text-align: left;
         }
 
         .progress-bar-container {
