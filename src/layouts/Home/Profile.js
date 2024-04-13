@@ -41,9 +41,7 @@ const ProfileText = ({ visible, titleId }) => (
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       This portfolio stands as a testament to my capabilities and underscores my unwavering 
-      dedication to the dynamic realm of technology. 
-      More about me given{' '}
-      <Link href="/projects/volkihar-knight">here</Link>. 
+      dedication to the dynamic realm of technology.{' '}<Link href="/projects/volkihar-knight">Learn More About Me</Link>.
       I’m always down for hearing about new projects, so feel free to drop me a line.
       
     </Text>
